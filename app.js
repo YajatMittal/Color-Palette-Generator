@@ -50,9 +50,7 @@ function iconToggler(icon) {
     }, 1000)
 }
 
-btn.addEventListener("click", () => {
-    generatePalette();
-})
+btn.addEventListener("click", generatePalette)
 
 colorPalette.addEventListener("click", (event) => {
     if (event.target.classList.contains("color-box")) {
